@@ -1,17 +1,16 @@
-name: Say hi!
-auhtor: cvesa
-description: Say Hi and show time
+name: 'Hello World Docker Action'
+description: 'Say hello to a user or the world'
 
 inputs:
   who-to-greet:
-    descripion: Who to say hi to? 
-    default: world
+    descripion: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
   time:
-    description: The time we were friendly
-
+    description: 'The time we said hello.'
 runs:
-  using: docker
-  image: Dockerfile
+  using: 'docker'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
