@@ -9,7 +9,7 @@ on:
         description: 'Who do we target for 🗨️'
         type: string
         required: true 
-        default: attendees
+        default: cvesa
 
 jobs:
   test-action:
