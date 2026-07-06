@@ -4,6 +4,12 @@ on:
     branches: [ main ]
     paths: [ hello-world-docker-action/** ]
   workflow_dispatch:
+    inputs:
+      who-to-greet:
+        description: 'Who do we target for 🗨️'
+        type: string
+        required: true 
+        default: attendees
 
 jobs:
   test-action:
