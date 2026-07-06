@@ -1,4 +1,4 @@
-name: Test External Repo
+name: 02 - CI Build for Docker Action - External Repo
 on: [workflow_dispatch]
 
 jobs:
