@@ -14,7 +14,7 @@ jobs:
     steps:
       - run: |
           echo "This job was triggered by ${{ github.event_name }}"
-          echo "Branch name is ${{ github.ref }} and repository is ."
+          echo "Branch name is ${{ github.ref }} and repository is ${{ github.repository }}"
           echo "Trigger: ${{ github.event_name }} ">> $GITHUB_STEP_SUMMARY
       - uses: actions/checkout@v7.0.0  
       
